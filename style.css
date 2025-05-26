@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #1a73e8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.app-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h2 {
+    margin: 0 0 10px;
+}
+
+button#downloadBtn {
+    background: #34a853;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2c8d45;
+}
+
+.note {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.screenshots {
+    padding: 20px;
+    background: white;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.scroll-container img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.whats-new {
+    padding: 20px;
+    background: white;
+    margin-top: 10px;
+}
+
+footer {
+    padding: 20px;
+    background: #e0e0e0;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .app-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .app-icon {
+        margin: 0 0 10px 0;
+    }
+}
